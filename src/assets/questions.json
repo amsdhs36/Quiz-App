@@ -1,0 +1,9 @@
+{
+    "questions":[
+        {"qid":1,"question":"What is ng?","a":"next generation","b":"not going","c":"no generation","d":"next going"},
+        {"qid":2,"question":"What is DI?","a":"dependant injection","b":"dependency injection","c":"do inject","d":"done injection"},
+        {"qid":3,"question":"Which of the following is correct about Angular 2 Directive??","a":"A directive is a custom HTML element that is used to extend the power of HTML","b":"A directive can be used to import the functionality from other Angular JS modules","c":"Both of the above","d":"None of the above"},
+        {"qid":4,"question":"Which of the following is correct about tsconfig.json?","a":"This file is used to give options about TypeScript used for Angular JS project","b":"This file contains information about Angular 2 project","c":"This file conatin the system files required for Angular JS application","d":"All of the above"}
+        ]
+
+}

@@ -1,0 +1,33 @@
+<div>
+    <div *ngIf="f1">
+    <div *ngFor ="let q of questions">
+ <div>{{q.qid}} ) {{q.question}}</div>
+   <div> 
+    <input type="radio" name={{q.qid}} value={{q.a}} (click)="ans(q.qid,q.a)"/>{{q.a}}
+    <input type="radio" name={{q.qid}} value={{q.b}} (click)="ans(q.qid,q.b)"/>{{q.b}}
+    <input type="radio" name={{q.qid}} value={{q.c}} (click)="ans(q.qid,q.c)"/>{{q.c}}
+    <input type="radio" name={{q.qid}} value={{q.d}} (click)="ans(q.qid,q.d)"/>{{q.d}}
+    </div>
+    </div>
+    <input type="submit" value="submit quiz"(click)="submitExam()"/>
+</div>
+<div *ngIf="f2">
+    {{msg}}
+    <br/>
+    <input type="button" value="Retake Quiz" (click)="retakeexam()"/>
+    <input type="button" value="Review Quiz" (click)="reviewExam()"/>
+</div>
+<div *ngIf="f3">
+<h2> All Question and Answer Details are here</h2>
+<div *ngFor="let q of questions;let i=index;">
+    {{i}}
+    {{q.qid}} ) {{q.question}}<br/>
+    a) {{q.a}} b){{q.b}} c){{q.c}} d){{q.d}}<br/>
+    <div>Your answer is: </div> 
+    <div> Correct answer is </div>
+    
+</div>
+</div>
+</div>
+
+
